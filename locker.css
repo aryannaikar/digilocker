@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: #dfe6e9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locker {
+  width: 250px;
+  height: 450px;
+  background-color: #2f3542;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.dial-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dial {
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle at center, #b2bec3 30%, #636e72 100%);
+  border: 5px solid #2f3542;
+  border-radius: 50%;
+  position: relative;
+}
+
+.center {
+  width: 40px;
+  height: 40px;
+  background-color: #2f3542;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 5px #000000aa;
+}
+
+/* Spokes like a steering wheel */
+.spoke {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 20px;
+  background-color: #dcdde1;
+  transform-origin: center center;
+  border-radius: 4px;
+}
